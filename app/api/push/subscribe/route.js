@@ -16,9 +16,7 @@ export async function POST(request) {
             )
         }
 
-        const body = await request.json()
-
-        const subscription = body?.subscription
+        const subscription = await request.json()
 
         if (
             !subscription?.endpoint ||
