@@ -154,7 +154,7 @@ export async function POST(request) {
             'http://localhost:3000'
 
         const inviteUrl =
-            `${appUrl}/rider/invite/${rawToken}`
+            `${appUrl}/rider-invite/${rawToken}`
 
         return NextResponse.json({
             success: true,
